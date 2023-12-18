@@ -5,6 +5,11 @@
 npm install
 ```
 
+## Project JSON DB setup
+```
+json-server --watch data/db.json
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -17,3 +22,5 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Instruction: First Download zip or clone repository then install node_modules and start json-server seperate
