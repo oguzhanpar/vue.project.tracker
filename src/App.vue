@@ -1,10 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">Projects</router-link> | 
-    <router-link to="/addproject">New Project</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <NavbarComponent/>
+    <router-view/>
+  </div>
 </template>
+
+<script>
+import NavbarComponent from "./components/NavbarComponent.vue";
+export default {
+  components: {NavbarComponent}
+}
+</script>
 
 <style>
 body{

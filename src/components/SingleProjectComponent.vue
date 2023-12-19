@@ -3,7 +3,9 @@
     <div class="actions">
         <h3 @click="showDetails = !showDetails">{{project.title}}</h3>
         <div class="icons">
-            <span class="material-symbols-outlined">edit</span>
+            <router-link :to="{ name: 'editproject', params: { id: project.id } }">
+                <span class="material-symbols-outlined">edit</span>
+            </router-link>
             <span @click="deleteProject" class="material-symbols-outlined">delete</span>
             <span @click="toggleComplete" class="material-symbols-outlined">done</span>
         </div>
@@ -39,7 +41,6 @@ export default {
             .catch((err) => err.message)
         }
     }
-
 }
 </script>
 

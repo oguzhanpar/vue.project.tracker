@@ -1,14 +1,11 @@
 <template>
   <div class="home">
     <div v-if="projects.length">
-
       <div v-for="project in projects" :key="project.id">
         <SingleProjectComponent :project="project" @delete="handleDelete" @complete="handleComplete">
         </SingleProjectComponent>
       </div>
-
     </div>
-
   </div>
 </template>
 
